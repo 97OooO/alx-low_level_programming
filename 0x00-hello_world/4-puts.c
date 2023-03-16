@@ -1,6 +1,6 @@
 #include<stdio.h>
-/*
- * main - Program starts with the entry point
+/**
+ * main - The entry point
  * Return: Always 0(Success)
 */
 int main(void)
