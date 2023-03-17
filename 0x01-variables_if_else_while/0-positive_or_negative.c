@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /*
- * main - Number's Ditermination positive, negative or zero
- *
- * Return : always 0 (success)
- */
+* main - if a number positive, negative or zero
+*
+* Return : always 0 (success)
+*/
 int main(void)
 {
 	int n;
