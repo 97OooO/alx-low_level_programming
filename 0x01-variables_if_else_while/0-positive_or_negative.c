@@ -3,15 +3,17 @@
 #include <stdlib.h>
 
 /*
- * main - Number's Ditermination positive, negative or neutre
+ * main - Number's Ditermination positive, negative or zero
+ *
  * Return : always 0 (success)
  */
 int main(void)
-{ 
+{
 	int n;
+
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
-	if (n>0)
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
