@@ -4,13 +4,13 @@
 
 int main() {
     int n;
-    srand(time(NULL)); // Initialize random seed
+    srand(time(NULL)); /* Initialize random seed */
     
-    n = rand(); // Generate random number
+    n = rand(); /* Generate random number */
     
     printf("Last digit of %d is ", n);
     
-    int lastDigit = n % 10; // Get last digit of n
+    int lastDigit = n % 10; /* Get last digit of n */
     
     if (lastDigit > 5) {
         printf("and is greater than 5\n");
