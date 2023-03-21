@@ -6,14 +6,14 @@ nclude "main.h"
 
 void print_alphabet(void)
 {
-	char c[] = "abcdefghijklmnoprstuvwxyz\n";
-	int i = 0;
+	char letter;
+	letter = 'a';
 
-	while (c[i] != '\0')
+	while (letter <= 'z')
 	{
-		_putchr(c[i]);
+		_putchr(letter);
 		_putchar('\n');
-		i++;
+		letter++;
 	}
 
 	return (0);
