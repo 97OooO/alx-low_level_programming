@@ -11,7 +11,7 @@ int add ( int O, int L)
 {
 	int sum;
 
-	c = O + L;
+	sum = O + L;
 
 	return (sum);
 }
