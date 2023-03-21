@@ -2,12 +2,12 @@
 
 /**
  * add - adds 2 integers and return an integer as a result
- * @a: integer to be added to b
- * @b: integer to be added to a
- * Return: sum of a and b
+ * @O: integer to be added to L
+ * @L: integer to be added to O
+ * Return: sum of O and L
  */
 
-int add ( int O, int L)
+int add(int O, int L)
 {
 	int sum;
 
