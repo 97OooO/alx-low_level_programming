@@ -1,16 +1,14 @@
-#!/bin/bash
 #include "main.h"
 
-int main(void)
+int main()
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char c[] = "_putchar\n";
+	int i = 0;
+
+	while (c[i] != '\0')
+	{
+		_putchar(c[i]);
+		i++;
+	}
 	return 0;
 }
