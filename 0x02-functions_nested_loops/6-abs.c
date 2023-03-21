@@ -12,10 +12,10 @@ int _abs(int nmb)
 {
 	if (nmb < 0)
 	{
-		return -nmb;
+		return (-nmb);
 	}
 	else
 	{
-		return nmb;
+		return (nmb);
 	}
 }
