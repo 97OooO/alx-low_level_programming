@@ -8,8 +8,6 @@
 * Return: Always 0 (Success)
 */
 
-// LAKRIM OSSAMA
-
 int main(void)
 {
 	char c[] = "_putchar\n";
