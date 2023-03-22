@@ -8,7 +8,7 @@
  * Return: (Success)
  */
 
-int main()
+int main(void)
 {
 	int i, fib1 = 1, fib2 = 2, fib_next;
 
