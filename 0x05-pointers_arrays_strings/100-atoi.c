@@ -18,7 +18,8 @@ int _atoi(char *s)
     /* In this stage: Handle negative sign if present*/
 	if (*(s + i) == '-')
 	{
-		sign = -1;i++;
+		sign = -1;
+		i++;
 	}
     /* In this stage: Handle positive sign if present*/
 	else if (*(s + i) == '+')
