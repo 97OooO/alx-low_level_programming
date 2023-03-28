@@ -4,16 +4,28 @@
  * starting with the first character
  *
  * @str: Pointer to the string to be printed
+ * Return: print
  */
 void puts2(char *str)
 {
-	int len = 0, i;
+	int len = 0;
+	int m = 0;
+	char *n = str;
+	int i;
 
-	while (str[i] != '\0')
+	while (*n != '\0')
+	{
+		n++;
 		len++;
+	}
+	m = len - 1;
 
-	for (i =(len + 1) / 2; i < len; i++)
+	for (i = 0 ; i <= t ; i++)
+	{
+		if (i % 2 == 0)
+	{
 		_putchar(str[i]);
-
+	}
+	}
 	_putchar('\n');
 }
