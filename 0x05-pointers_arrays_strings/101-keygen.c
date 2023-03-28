@@ -11,21 +11,26 @@
 
 int main(void)
 {
+	int pass[100];
+	int i, sum, n;
+
+	sum = 0;	
+
 	srand(time(NULL));
 
-	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-	char password[PASSWORD_LENGTH + 1];
-
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < 100; i++)
 	{
-		int index = rand() % (sizeof(charset) - 1);
-		password[i] = charset[index];
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 	}
-
-	password[PASSWORD_LENGTH] = '\0';
-
-	printf("Random password: %s\n", password);
 
 	return (0);
 }
