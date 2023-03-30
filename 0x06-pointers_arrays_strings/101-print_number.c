@@ -2,7 +2,7 @@
 
 /**
  * print_number - print numbers chars
- * @n: integer params
+ * @n: integer parametre
  * Return: 0
  */
 
@@ -19,8 +19,8 @@ void print_number(int n)
 	}
 
 	if (m / 10 != 0)
-        {
-                print_number(m / 10);
-        }
+	{
+		print_number(m / 10);
+	}
 	_putchar((m % 10) + '0');
 }
