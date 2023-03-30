@@ -8,6 +8,7 @@
  * negative value if s1 < s2, 
  * positive value if s1 > s2
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -24,10 +25,12 @@ int _strcmp(char *s1, char *s2)
 	{
 		return (0);
 	}
+
 	else if (s1[i] == '\0')
 	{
 		return (-s2[i]);
 	}
+
 	else
 	{
 		return (s1[i]);
