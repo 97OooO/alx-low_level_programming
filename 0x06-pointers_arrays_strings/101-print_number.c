@@ -7,18 +7,27 @@
  * Return: 0
  */
 
-int main(void)
+void print_number(int n)
 {
-	int n;
-	int a[5];
-	int *p;
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
 
-	a[2] = 1024;
-	p = &n;
+	int divisor = 1;
 
-	*(&a[2] - 1) = 98; /* added line */
+	while (n / divisor >= 10)
+	{
+		divisor *= 10;
+	}
 
-	printf("a[2] = %d\n", a[2]);
+	while (divisor > 0)
+	{
+		int digit = (n / divisor) % 10;
 
-	return (0);
+		_putchar(digit + '0');
+
+		divisor /= 10;
+	}
 }
