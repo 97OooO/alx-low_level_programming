@@ -15,7 +15,8 @@ int wildcmp(char *s1, char *s2)
     /* if s2 has a "*" character */
 	if (*s2 == '*')
 	{
-        /* we can skip the "*" character or match it with any sequence of characters in s1 */
+        /* we can skip the "*" character or match it 
+	 * with any sequence of characters in s1 */
 		return (wildcmp(s1, s2 + 1) || (*s1 != '\0' && wildcmp(s1 + 1, s2)));
 	}
 
