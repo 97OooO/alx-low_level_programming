@@ -41,7 +41,7 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	int num_words = count_words(str);
-	char **words = malloc (sizeof(char *) * (num_words + 1));
+	char **words = malloc(sizeof(char *) * (num_words + 1));
 	int word_index = 0;
 	int in_word = 0;
 	char *start = NULL;
@@ -70,6 +70,7 @@ char **strtow(char *str)
 			{
 				int word_len = str - start;
 				char *word = malloc(word_len + 1);
+
 				if (word == NULL)
 				{
 					while (word_index > 0)
