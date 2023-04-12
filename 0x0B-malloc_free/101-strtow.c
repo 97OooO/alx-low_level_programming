@@ -41,10 +41,10 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	int num_words = count_words(str);
-        char **words = malloc(sizeof(char *) * (num_words + 1));
-        int word_index = 0;
-        int in_word = 0;
-        char *start = NULL;
+	char **words = malloc (sizeof(char *) * (num_words + 1));
+	int word_index = 0;
+	int in_word = 0;
+	char *start = NULL;
 
 	if (str == NULL || *str == '\0')
 	{
