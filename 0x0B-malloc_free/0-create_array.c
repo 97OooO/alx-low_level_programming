@@ -2,8 +2,9 @@
 /**
  * create_array - Creates an array of chars and initialize
  *
- * @ size: size of array
- * @ c: the character
+ * @size: size of array
+ * @c: the character
+ * Return: return to 0 
  */
 
 char *create_array(unsigned int size, char c)
