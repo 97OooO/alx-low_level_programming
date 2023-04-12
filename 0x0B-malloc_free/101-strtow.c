@@ -5,8 +5,10 @@
 /**
  * count_word - helper function to count the number of words in a string
  * @str: string to evaluate
- *
+ * strtow - structor to words
+ * @c: to separate between words
  * Return: number of words
+ *
  */
 
 int is_space(char c)
