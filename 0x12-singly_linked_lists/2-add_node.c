@@ -7,8 +7,10 @@
  * @head: double pointer to the list_t list
  * @str: new string to add in the node
  *
- * Description: This function creates a new node containing the specified string
- * and adds it to the beginning of the linked list specified by @head. If memory
+ * Description: This function creates a
+ * new node containing the specified string
+ * and adds it to the beginning of the linked
+ * list specified by @head. If memory
  * allocation fails, the function returns NULL and does not modify the list.
  *
  * Return: The address of the new element, or NULL if it fails.
